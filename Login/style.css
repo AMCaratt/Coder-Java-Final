@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./img/conse2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  background-color: rgba(255, 249, 249, 0.23);
+  padding: 40px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  margin: 0;
+}
+
+.login-box {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  color: #000000;
+}
+
+.input-field::placeholder {
+  color: black; /* Cambio: color del marcador de posición a negro */
+}
+
+.input-field:focus::placeholder {
+  color: transparent; /* Marcador de posición transparente al hacer clic */
+}
+
+
+
+.login-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4f35058e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-text {
+  margin-top: 20px;
+}
+

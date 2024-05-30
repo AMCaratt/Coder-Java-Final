@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concesionaria</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="icon" href="./img/favicon.jpg">
+  <link rel="stylesheet" href="page.css">
+
+ </head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Consecionaria</h1>
+      <div class="elemento-derecha">
+        <button id="logoutButton">Logout</button>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#" onclick="mostrarInventario()">Ver Inventario</a></li>
+          <li><a href="#" id="contact" >Contacto</a></li>
+          <p id="respuestaServidor"></p>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main>
+    <section id="inicio">
+      <div class="container">
+        <h2>Bienvenido a nuestra concesionaria</h2>
+        <p>Ofrecemos una amplia selección de autos nuevos y usados de alta calidad.</p>
+        <a href="#" onclick="mostrarInventario()" class="btn">Ver Inventario</a>
+      </div>
+    </section>
+
+    <section id="inventario" >
+      <div class="container">
+        <h2>Nuestro Inventario</h2>
+        <div id="filtros" >
+          <label for="marca">Marca:</label>
+          <select id="marca">
+            <option value="">Todas</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Renault">Renault</option>
+            <option value="Citroen">Citroen</option>
+            <option value="Audi">Audi</option>
+            <option value="Bmw">Bmw</option>
+            <!-- Agrega más marcas aquí -->
+          </select>
+    
+          <label for="año">Año:</label>
+          <input type="number" id="año" min="1900" max="2023">
+    
+          <label for="precio">Precio máximo:</label>
+          <input type="number" id="precio" min="0" max="1000000">
+          <button onclick="mostrarAutos()">Filtrar</button>
+          <p id="notfound">  </p>
+        </div>
+    
+        <div class="car-list" id="carList">
+          <!-- Los autos del inventario se generarán con JavaScript -->
+        </div>
+      </div>
+    </section>
+    
+  <!-- Enlace de contacto -->
+  <!-- Formulario de contacto -->
+  <div id="contact-form">
+    <h2>Consulta</h2>
+    <form id="form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit" id="submit-btn">Enviar</button>
+      <div id="confirmation-message">La consulta ha sido enviada.</div>
+    </form>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Concesionaria. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="./page.js" defer> </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+
+</body>
+</html>

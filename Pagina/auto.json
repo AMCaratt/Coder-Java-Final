@@ -1,0 +1,66 @@
+[
+    {
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "año": 2024,
+      "precio": 250000,
+      "imagen": "./img/toyota corolla.jpg"
+    },
+    {
+      "marca": "Honda",
+      "modelo": "Civic",
+      "año": 2019,
+      "precio": 170000,
+      "imagen": "./img/honda civic.jpg"
+    },
+    {
+      "marca": "Ford",
+      "modelo": "Mustang",
+      "año": 2023,
+      "precio": 350000,
+      "imagen": "./img/ford_mustang.jpg"
+    },
+    {
+      "marca": "Chevrolet",
+      "modelo": "Camaro",
+      "año": 2024,
+      "precio": 300000,
+      "imagen": "./img/Camaro.jpg"
+    },
+    {
+      "marca": "Hyundai",
+      "modelo": "Genesis",
+      "año": 2018,
+      "precio": 18000,
+      "imagen": "./img/genesi.jpg"
+    },
+    {
+      "marca": "Renault",
+      "modelo": "Clio",
+      "año": 2013,
+      "precio": 10000,
+      "imagen": "./img/Renault-Clio.jpg"
+    },
+    {
+      "marca": "Citroen",
+      "modelo": "C4",
+      "año": 2008,
+      "precio": 5000,
+      "imagen": "./img/c4.jpg"
+    },
+    {
+      "marca": "Audi",
+      "modelo": "A5",
+      "año": 2021,
+      "precio": 30000,
+      "imagen": "./img/Audi-A5.jpg"
+    },
+    {
+      "marca": "Bmw",
+      "modelo": "M5",
+      "año": 2022,
+      "precio": 10000,
+      "imagen": "./img/BMW_M5.jpg"
+    }
+  ]
+  

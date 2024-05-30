@@ -1,0 +1,248 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1;
+  }
+  
+.container {
+  width: 80%;
+  max-width: 2900px;
+  margin:  auto;
+  padding: 5px;
+}
+
+header {
+  background-color: #b8dd9b;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:not(:last-child) a {
+  margin-right: 0px; /* Espacio entre cada enlace */
+  text-decoration: none;
+}
+
+nav ul li:not(:last-child) a::after {
+  content: "|";
+  color: white;
+  margin-left: 28px; /* Espacio después de la barra recta */
+} 
+
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #fffafa;
+  text-align: center;
+  
+}
+h3{
+  color: black
+}
+
+  .car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+.car-item {
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.car-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-item img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px ;
+  object-fit: cover;
+}
+.car-item h3,
+.car-item p {
+  margin: 5px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+
+/* Estilos para el formulario de contacto */
+#contact-form {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#contact-form button {
+  background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    /* Estilos para el enlace de contacto */
+    #contact-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      z-index: 999;
+    }
+    
+    /* Estilos para el mensaje de confirmación */
+    #confirmation-message {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #e9f7ef;
+      border: 1px solid #4CAF50;
+      color: #4CAF50;
+    }
+    .elemento-derecha {
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin: 20px;
+    }
+    
+    .elemento-derecha button {
+      background-color: gray;
+      color: white;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer; /* Cambia el cursor a una mano */
+    }
+
+    #filtros label {
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #242020;
+      width: 80px;
+    }
+    
+    #filtros select,
+    #filtros input[type="number"] {
+      display: inline-block;
+      width: calc(55% - 400px); /* Resta el ancho del label y el margen derecho */
+      padding: 8px;
+      border: 1px solid #2e2121;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+      margin-right: 12px; /* Agrega un margen derecho entre los elementos */
+    }
+  
+    #filtros button {
+      padding: 8px 16px;
+      background-color: #333;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px; /* Agrega un margen superior para separar del último input */
+    }
+        
+    #notfound {
+      color: red;
+      font-size: 14px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+
+    }
+
+
+  
+    

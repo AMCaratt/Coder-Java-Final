@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="./img/favicon.jpg">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="register-container">
+      <div class="register-box">
+        <h2>Registro</h2>
+        <form id="register-form" onsubmit="guardarRegistro(event)"> 
+          <input type="text" id="nombre" name="nombre" class="input-field" placeholder="Nombre" required>
+          <input type="text" id="apellido" name="apellido" class="input-field" placeholder="Apellido" required>
+          <input type="text" id="usuario" name="usuario" class="input-field" placeholder="Usuario" required>
+          <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
+          <input type="password" id="contrasena" name="contrasena" class="input-field" placeholder="Contraseña" required>
+          <button type="submit" class="register-button">Registrarse</button>
+        </form>
+        <p class="login-link">¿Ya tienes una cuenta? <a href="../Login/login.html">Inicia sesión</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="registro.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

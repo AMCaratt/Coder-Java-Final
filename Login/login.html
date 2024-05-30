@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="../Login/img/favicon1.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+      <div class="login-box">
+        <form id="login-form">
+          <h2>Inicio de Sesión</h2>
+          <input id="username" type="text" name="username" placeholder="Usuario" class="input-field" required>
+          <input id="password" type="password" name="password" placeholder="Contraseña" class="input-field" required>
+
+          <button id="Blogin" type="submit" class="login-button">Ingresar</button>
+        </form>
+        <p id="error-message"></p>
+        <p class="register-text">¿No tiene cuenta? <a href="../Registro/register.html">Regístrese</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="inicioSesion.js" type="module"></script>
+</body>
+</html>
